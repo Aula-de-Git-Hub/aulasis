@@ -3,6 +3,9 @@ $servername = "localhost";
 $database = "databasename";
 $username = "username";
 $password = "password";
+
+//alteracao com nova branch
+
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);
 // Check connection
