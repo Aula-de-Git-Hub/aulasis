@@ -1,9 +1,14 @@
-Teste de conexao PHP
-
-Aqui conecta o banco de dados 
-
-PHP
-
-IP 192.168.0.1
-
-Endereco do servidor www.servidor.com.br
+<?php
+$servername = "localhost";
+$database = "databasename";
+$username = "username";
+$password = "password";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+mysqli_close($conn);
+?>
